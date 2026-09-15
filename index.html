@@ -162,6 +162,24 @@ h2.section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3
 .proj-stack{display:flex;flex-wrap:wrap;gap:.4rem}
 .proj-tech{padding:.2rem .6rem;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:6px;font-size:.7rem;color:var(--dim)}
 
+/* ---- CASE STUDIES ---- */
+.case-list{display:flex;flex-direction:column;gap:1.5rem}
+.case-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r2);padding:2rem 2.2rem;transition:all .3s}
+.case-card:hover{border-color:var(--teal);box-shadow:0 12px 32px rgba(0,0,0,.35)}
+.case-top{display:flex;justify-content:space-between;align-items:flex-start;gap:1.2rem;flex-wrap:wrap}
+.case-head{display:flex;gap:1rem;align-items:flex-start}
+.case-title{font-family:'Space Grotesk',sans-serif;font-size:1.2rem;font-weight:700;color:var(--text);line-height:1.35}
+.case-org{font-size:.8rem;color:var(--teal);margin-top:.25rem}
+.case-actions{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.case-link{padding:.35rem .85rem;border:1px solid var(--teal-glow);background:var(--teal-dim);border-radius:8px;font-size:.75rem;font-weight:600;color:var(--teal-l);display:inline-flex;align-items:center;gap:.4rem;transition:all .2s}
+.case-link:hover{background:var(--teal);color:#000}
+.case-body{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin:1.4rem 0 1.2rem}
+.case-block h4{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:.45rem}
+.case-block p{font-size:.85rem;color:var(--muted);line-height:1.72}
+.case-block p strong{color:var(--text);font-weight:600}
+.also-title{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:var(--text);margin:3rem 0 1.2rem;letter-spacing:.02em}
+@media(max-width:860px){.case-body{grid-template-columns:1fr;gap:1.1rem}.case-card{padding:1.5rem}}
+
 /* ---- SKILLS ---- */
 #skills{background:var(--bg2)}
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
